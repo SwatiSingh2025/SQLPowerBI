@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Login Page</title>
+    <style>
+        body {
+            background: #f0f4f8;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: #fff;
+            max-width: 350px;
+            margin: 80px auto;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #2d3e50;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 6px;
+            color: #34495e;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #1565c0;
+        }
+        .login-container .forgot {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #1976d2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Bank Login</h2>
+        <form>
+            <label for="username">Account Number</label>
+            <input type="text" id="username" name="username" placeholder="Enter your account number" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Login</button>
+            <a href="#" class="forgot">Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>
